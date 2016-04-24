@@ -1,0 +1,25 @@
+{
+  "name": "webgurl/vue-semantic-starter-theme",
+  "type": "wordpress-theme",
+  "version": "master",
+  "license": "MIT",
+  "description": "A rest powered theme starter using VueJS and Semantic UI forked from https://github.com/gilbitron/wp-rest-theme",
+  "authors": [
+    {
+      "name": "Sherri Flemings",
+      "email": "webgurl@webgurl.ca",
+      "homepage": "https://webgurl.ca/"
+    }
+  ],
+  "keywords": [
+    "rest", "vue", "wordpress", "composer", "semantic ui"
+  ],
+  "support": {
+    "issues": "https://github.com/originalwebgurl/wp-rest-theme/issues"
+  },
+  "dist":
+  {
+    "url": "git@github.com:originalwebgurl/wp-rest-theme.git",
+    "type": "git"
+  }
+}
