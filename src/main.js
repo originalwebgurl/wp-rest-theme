@@ -4,18 +4,18 @@ import VueRouter from 'vue-router'
 Vue.use(require('vue-resource'));
 Vue.use(VueRouter);
 
-import App from './app.vue'
+import App from './components/App/app.vue'
 
 Vue.config.debug = true;
 
-import Posts from './posts.vue'
-import Post from './post.vue'
+import Posts from './components/Post/posts.vue'
+import Post from './components/Post/post.vue'
 Vue.component('Post', Post);
-import Page from './page.vue'
+import Page from './components/Page/page.vue'
 Vue.component('Page', Page);
-import Header from './theme-header.vue'
+import Header from './components/Header/theme-header.vue'
 Vue.component('theme-header', Header);
-import Footer from './theme-footer.vue'
+import Footer from './components/Footer/theme-footer.vue'
 Vue.component('theme-footer', Footer);
 
 new Vue({
@@ -25,6 +25,7 @@ new Vue({
   }
 });
 
+//https://www.reddit.com/r/vuejs/comments/498mij/how_do_you_handle_seo_with_vue/
 var router = new VueRouter({
     hashbang: false,
     history: true

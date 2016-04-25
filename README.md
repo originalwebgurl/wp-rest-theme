@@ -19,7 +19,7 @@ To use the theme on your WordPress site just install it like any other theme.
 
 ### Customization
 
-All of the Vue.js specific code is in the `rest-theme/src` folder. To build the `dist/build.js` script while
+All of the Vue.js specific code is in the `components/src` folder. To build the `dist/build.js` script while
 developing run the following from the theme root:
 
 ```
