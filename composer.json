@@ -3,7 +3,7 @@
   "type": "wordpress-theme",
   "version": "master",
   "license": "MIT",
-  "description": "A rest powered theme starter using VueJS and Semantic UI forked from https://github.com/gilbitron/wp-rest-theme",
+  "description": "A rest powered starter theme using VueJS and Semantic UI forked from https://github.com/gilbitron/wp-rest-theme",
   "authors": [
     {
       "name": "Sherri Flemings",

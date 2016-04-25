@@ -4,39 +4,27 @@ import VueRouter from 'vue-router'
 Vue.use(require('vue-resource'));
 Vue.use(VueRouter);
 
-Vue.config.debug = true
+import App from './app.vue'
+
+Vue.config.debug = true;
 
 import Posts from './posts.vue'
 import Post from './post.vue'
-Vue.component('Post', Post)
+Vue.component('Post', Post);
 import Page from './page.vue'
-Vue.component('Page', Page)
+Vue.component('Page', Page);
 import Header from './theme-header.vue'
-Vue.component('theme-header', Header)
+Vue.component('theme-header', Header);
 import Footer from './theme-footer.vue'
-Vue.component('theme-footer', Footer)
+Vue.component('theme-footer', Footer);
 
-var App = Vue.extend({
-    template: '<theme-header></theme-header>' +
-              '<div class="container"><router-view></router-view></div>' +
-              '<theme-footer></theme-footer>',
-
-    ready() {
-        this.updateTitle('');
-    },
-
-    methods: {
-        updateTitle(pageTitle) {
-            document.title = (pageTitle ? pageTitle + ' - ' : '') + wp.site_name;
-        }
-    },
-
-    events: {
-        'page-title': function(pageTitle) {
-            this.updateTitle(pageTitle);
-        }
-    }
+new Vue({
+  el: 'body',
+  components: {
+    app: App
+  }
 });
+
 var router = new VueRouter({
     hashbang: false,
     history: true

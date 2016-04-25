@@ -1,0 +1,12 @@
+<header class="header">
+  <div class="container">
+    <div class="site-title">
+      <a v-link="{ path: base_path }">{{ site_name }}</a>
+    </div>
+    <ul class="nav">
+      <li v-for="page in pages">
+        <a v-link="{ path: base_path + page.slug }">{{ page.title.rendered }}</a>
+      </li>
+    </ul>
+  </div>
+</header>

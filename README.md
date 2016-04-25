@@ -1,6 +1,8 @@
 # WP REST Theme
 
-This is a simple skeleton theme powered by the WordPress REST API and Vue.js. The aim is to 
+## TODO - update with details about changes made to fork.
+
+This is a simple skeleton theme powered by the WordPress REST API and Vue.js. The aim is to
 demonstrate how to create a [single page application](https://en.wikipedia.org/wiki/Single-page_application) using
 [Vue.js](http://vuejs.org) to power the front end site while fetching data from the backend via the
 [WordPress REST API](http://v2.wp-api.org), all without sacrificing SEO.
