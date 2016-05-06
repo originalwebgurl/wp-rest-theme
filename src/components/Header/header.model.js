@@ -13,7 +13,7 @@ export default {
 
   methods: {
     getPages() {
-      this.$http.get(wp.root + 'wp/v2/pages').then(function(response) {
+      this.$http.get('pages').then(function(response) {
         this.pages = response.data;
       }, function(response) {
         console.log(response);

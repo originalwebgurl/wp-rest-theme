@@ -16,7 +16,7 @@ export default {
 
   methods: {
     getPage() {
-      this.$http.get(wp.root + 'wp/v2/pages/' + this.$route.postId).then(function(response) {
+      this.$http.get('pages/' + this.$route.postId).then(function(response) {
         this.page = response.data;
         this.$dispatch('page-title', this.page.title.rendered);
       }, function(response) {

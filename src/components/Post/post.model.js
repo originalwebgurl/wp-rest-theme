@@ -30,7 +30,7 @@ export default {
 
   methods: {
     getPost() {
-      this.$http.get(wp.root + 'wp/v2/posts/' + this.$route.postId).then(function(response) {
+      this.$http.get('posts/' + this.$route.postId).then(function(response) {
         this.post = response.data;
         this.$dispatch('page-title', this.post.title.rendered);
       }, function(response) {

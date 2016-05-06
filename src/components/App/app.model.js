@@ -1,7 +1,15 @@
+import Header from '../../components/Header/theme-header.vue'
+import Footer from '../../components/Footer/theme-footer.vue'
+
 export default {
 
   ready() {
     this.updateTitle('');
+  },
+
+  components: {
+    'theme-header': Header,
+    'theme-footer': Footer
   },
 
   methods: {
