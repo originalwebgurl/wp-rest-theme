@@ -1,21 +1,31 @@
+import Post from '../../components/Post/post.vue'
+
 export default {
   ready() {
-    this.getPosts();
+    this.getPosts({
+      'per_page': this.per_page
+    });
+  },
+
+  components: {
+    'wg-post': Post
   },
 
   data() {
     return {
-      posts: []
+      posts: [],
+      per_page: 3
     }
   },
 
   methods: {
-    getPosts() {
-      this.$http.get('posts').then(function(response) {
-        this.posts = response.data;
-        this.$dispatch('page-title', '');
-      }, function(response) {
+
+    getPosts( data ) {
+      this.$http.get('posts', data).then(function (response) {
         console.log(response);
+        this.posts = response.data;
+      }, function(response) {
+        console.warn(response);
       });
     }
   }

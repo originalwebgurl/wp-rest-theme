@@ -37,7 +37,7 @@ export default {
     });
   },
 
-  posts: function(params) {
+  posts: function() {
     return this.vm.http({url: 'posts', method: 'GET'});
   }
 }

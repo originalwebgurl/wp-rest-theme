@@ -2,7 +2,10 @@
   <h1 class="entry-title" v-if="isSingle">{{ post.title.rendered }}</h1>
   <h2 class="entry-title" v-else><a v-link="{ path: base_path + post.slug }">{{ post.title.rendered }}</a></h2>
 
-  <div class="entry-content">
+  <div class="entry-content" v-if="isSingle">
     {{{ post.content.rendered }}}
+  </div>
+  <div class="entry-content" v-else>
+    {{{ post.excerpt.rendered }}}
   </div>
 </div>

@@ -8,8 +8,8 @@ export default {
   },
 
   components: {
-    'theme-header': Header,
-    'theme-footer': Footer
+    'wg-header': Header,
+    'wg-footer': Footer
   },
 
   methods: {

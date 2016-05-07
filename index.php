@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- Vue.js App component -->
     <div id="app"></div>
 
     <?php wp_footer(); ?>
